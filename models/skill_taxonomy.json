@@ -1,0 +1,128 @@
+{
+  "_meta": {
+    "description": "Hand-curated skill taxonomy used for skill extraction and normalization. Canonical skill names map to a category and a list of surface-form aliases (case-insensitive, matched as whole-word/phrase). Informed by frequency analysis of the resume_corpus dataset (see DATASET.md) plus common industry terminology.",
+    "version": "1.0.0"
+  },
+  "Programming Languages": {
+    "python": ["python", "python3", "python 3", "py"],
+    "java": ["java"],
+    "c++": ["c++", "cpp", "c plus plus"],
+    "c#": ["c#", "c sharp", "csharp"],
+    "c": ["c programming", " c "],
+    "javascript": ["javascript", "js", "ecmascript"],
+    "typescript": ["typescript", "ts"],
+    "php": ["php"],
+    "ruby": ["ruby"],
+    "go": ["golang", "go lang"],
+    "r": ["r programming", "r language"],
+    "scala": ["scala"],
+    "swift": ["swift"],
+    "kotlin": ["kotlin"],
+    "perl": ["perl"],
+    "sql": ["sql", "structured query language"],
+    "pl/sql": ["pl/sql", "plsql"],
+    "matlab": ["matlab"],
+    "bash": ["bash", "shell scripting", "shell script"]
+  },
+  "Web Development": {
+    "html": ["html", "html5"],
+    "css": ["css", "css3"],
+    "react": ["react", "react.js", "reactjs"],
+    "angular": ["angular", "angularjs", "angular.js"],
+    "vue": ["vue", "vue.js", "vuejs"],
+    "jquery": ["jquery"],
+    "node.js": ["node.js", "nodejs", "node"],
+    "bootstrap": ["bootstrap"],
+    "sass": ["sass", "scss"],
+    "wordpress": ["wordpress"],
+    "rest api": ["rest api", "restful", "rest", "restful api"],
+    "graphql": ["graphql"],
+    "next.js": ["next.js", "nextjs"],
+    "express.js": ["express.js", "expressjs", "express"]
+  },
+  "Databases": {
+    "mysql": ["mysql"],
+    "sql server": ["sql server", "ms sql server", "mssql"],
+    "oracle": ["oracle", "oracle database", "oracle db"],
+    "postgresql": ["postgresql", "postgres"],
+    "mongodb": ["mongodb", "mongo"],
+    "redis": ["redis"],
+    "cassandra": ["cassandra"],
+    "sqlite": ["sqlite"],
+    "dynamodb": ["dynamodb"],
+    "database administration": ["database administration", "dba", "database administrator"]
+  },
+  "Cloud": {
+    "aws": ["aws", "amazon web services"],
+    "azure": ["azure", "microsoft azure"],
+    "gcp": ["gcp", "google cloud", "google cloud platform"],
+    "cloud computing": ["cloud computing", "cloud infrastructure"]
+  },
+  "DevOps": {
+    "docker": ["docker", "containerization"],
+    "kubernetes": ["kubernetes", "k8s"],
+    "jenkins": ["jenkins"],
+    "ci/cd": ["ci/cd", "continuous integration", "continuous deployment"],
+    "terraform": ["terraform"],
+    "ansible": ["ansible"],
+    "git": ["git", "github", "gitlab", "version control"],
+    "linux": ["linux", "unix"],
+    "aix": ["aix"],
+    "solaris": ["solaris"]
+  },
+  "Machine Learning": {
+    "machine learning": ["machine learning", "ml"],
+    "deep learning": ["deep learning", "dl"],
+    "tensorflow": ["tensorflow"],
+    "pytorch": ["pytorch"],
+    "scikit-learn": ["scikit-learn", "sklearn", "scikit learn"],
+    "keras": ["keras"],
+    "nlp": ["nlp", "natural language processing"],
+    "computer vision": ["computer vision", "cv"],
+    "xgboost": ["xgboost"],
+    "neural networks": ["neural network", "neural networks", "cnn", "rnn", "lstm"]
+  },
+  "Data Science": {
+    "data analysis": ["data analysis", "data analytics"],
+    "pandas": ["pandas"],
+    "numpy": ["numpy"],
+    "data visualization": ["data visualization", "tableau", "power bi"],
+    "statistics": ["statistics", "statistical analysis"],
+    "etl": ["etl", "extract transform load"],
+    "excel": ["excel", "microsoft excel"]
+  },
+  "Security": {
+    "cybersecurity": ["cybersecurity", "cyber security", "information security"],
+    "network security": ["network security"],
+    "penetration testing": ["penetration testing", "pen testing"],
+    "security analysis": ["security analyst", "security analysis"],
+    "firewall": ["firewall"],
+    "siem": ["siem"]
+  },
+  "Project Management": {
+    "project management": ["project management", "project manager", "pmp"],
+    "agile": ["agile", "scrum", "kanban"],
+    "jira": ["jira"],
+    "stakeholder management": ["stakeholder management"]
+  },
+  "Networking": {
+    "network administration": ["network administration", "network administrator"],
+    "tcp/ip": ["tcp/ip"],
+    "vpn": ["vpn"],
+    "routing and switching": ["routing", "switching", "cisco"]
+  },
+  "Tools & Office": {
+    "microsoft office": ["microsoft office", "ms office"],
+    "word": ["ms word", "microsoft word"],
+    "powerpoint": ["powerpoint"],
+    "outlook": ["outlook"],
+    "visual studio": ["visual studio"],
+    "photoshop": ["photoshop"],
+    "customer service": ["customer service"]
+  },
+  "UI/UX": {
+    "ui design": ["ui", "user interface", "ui developer", "ui design"],
+    "ux design": ["ux", "user experience", "ux design"],
+    "front end development": ["front end", "front-end", "frontend", "front end developer"]
+  }
+}

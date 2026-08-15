@@ -1,0 +1,127 @@
+{
+  "model_version": "1.0.0",
+  "dataset_name": "florex/resume_corpus (resumes) \u2014 see DATASET.md",
+  "dataset_source": "https://github.com/florex/resume_corpus",
+  "training_date": "2026-08-15T16:33:25.482926+00:00",
+  "number_of_training_samples": 17501,
+  "number_of_validation_samples": 3750,
+  "number_of_test_samples": 3751,
+  "total_pairs_generated": 25002,
+  "usable_pairs_after_parsing": 25002,
+  "occupation_classes": [
+    "Database_Administrator",
+    "Front_End_Developer",
+    "Java_Developer",
+    "Network_Administrator",
+    "Project_Manager",
+    "Python_Developer",
+    "Security_Analyst",
+    "Software_Developer",
+    "Systems_Administrator",
+    "Web_Developer"
+  ],
+  "features_used": [
+    "skill_overlap",
+    "required_skill_coverage",
+    "preferred_skill_coverage",
+    "keyword_overlap",
+    "experience_alignment",
+    "education_alignment",
+    "job_title_similarity",
+    "resume_length",
+    "relevant_section_coverage",
+    "technical_keyword_density",
+    "tfidf_cosine_similarity"
+  ],
+  "algorithm": "XGBoost",
+  "candidate_models_compared": [
+    "LogisticRegression",
+    "RandomForest",
+    "GradientBoosting",
+    "XGBoost"
+  ],
+  "validation_metrics_by_model": {
+    "LogisticRegression": {
+      "accuracy": 0.7802666666666667,
+      "precision": 0.8071303331385155,
+      "recall": 0.7365333333333334,
+      "f1": 0.7702175125488009,
+      "roc_auc": 0.8557400177777779
+    },
+    "RandomForest": {
+      "accuracy": 0.7973333333333333,
+      "precision": 0.7794486215538847,
+      "recall": 0.8293333333333334,
+      "f1": 0.8036175710594315,
+      "roc_auc": 0.8867191466666667
+    },
+    "GradientBoosting": {
+      "accuracy": 0.7962666666666667,
+      "precision": 0.7832738398776135,
+      "recall": 0.8192,
+      "f1": 0.8008342022940563,
+      "roc_auc": 0.8882082133333333
+    },
+    "XGBoost": {
+      "accuracy": 0.8013333333333333,
+      "precision": 0.7951933124346917,
+      "recall": 0.8117333333333333,
+      "f1": 0.8033782000527844,
+      "roc_auc": 0.8884758755555557
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.8040522527326046,
+    "precision": 0.796875,
+    "recall": 0.816,
+    "f1": 0.8063241106719368,
+    "roc_auc": 0.8884665245202559
+  },
+  "confusion_matrix": [
+    [
+      1486,
+      390
+    ],
+    [
+      345,
+      1530
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "not_compatible(0)",
+    "compatible(1)"
+  ],
+  "feature_importance": {
+    "skill_overlap": 0.08320972323417664,
+    "required_skill_coverage": 0.07736165076494217,
+    "preferred_skill_coverage": 0.0,
+    "keyword_overlap": 0.08561763912439346,
+    "experience_alignment": 0.04925328493118286,
+    "education_alignment": 0.055769238620996475,
+    "job_title_similarity": 0.0,
+    "resume_length": 0.12059715390205383,
+    "relevant_section_coverage": 0.0,
+    "technical_keyword_density": 0.08241242170333862,
+    "tfidf_cosine_similarity": 0.44577884674072266
+  },
+  "feature_medians_train": {
+    "skill_overlap": 0.15384615384615385,
+    "required_skill_coverage": 0.3023255813953488,
+    "preferred_skill_coverage": 0.0,
+    "keyword_overlap": 0.11075949367088607,
+    "experience_alignment": 1.0,
+    "education_alignment": 0.5,
+    "job_title_similarity": 0.0,
+    "resume_length": 706,
+    "relevant_section_coverage": 0.0,
+    "technical_keyword_density": 0.013452914798206279,
+    "tfidf_cosine_similarity": 0.0
+  },
+  "random_seed": 42,
+  "python_version": "3.10.0",
+  "sklearn_version": "1.7.1",
+  "xgboost_version": "3.2.0",
+  "tfidf_vocab_size": 5000,
+  "training_wall_time_seconds": 6.9,
+  "label_definition": "1 = resume occupation_class == job-description occupation_class (a real, dataset-derived proxy for compatibility \u2014 see DATASET.md); 0 = different occupation_class."
+}

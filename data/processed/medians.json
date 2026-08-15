@@ -1,0 +1,13 @@
+{
+  "skill_overlap": 0.15384615384615385,
+  "required_skill_coverage": 0.3023255813953488,
+  "preferred_skill_coverage": 0.0,
+  "keyword_overlap": 0.11075949367088607,
+  "experience_alignment": 1.0,
+  "education_alignment": 0.5,
+  "job_title_similarity": 0.0,
+  "resume_length": 706,
+  "relevant_section_coverage": 0.0,
+  "technical_keyword_density": 0.013452914798206279,
+  "tfidf_cosine_similarity": 0.0
+}

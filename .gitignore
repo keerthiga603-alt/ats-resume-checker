@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Large raw datasets
+data/raw/resume_samples.txt
+data/raw/resume_samples.zip
+
+# Generated training data
+data/processed/*.pkl
+data/processed/*.npy
+data/processed/*.npz
+
+# Keep small metadata files
+!data/processed/.gitkeep
+!data/processed/medians.json
+!data/processed/split_indices.json
+
+# Keep trained model
+# models/ats_model.pkl is intentionally tracked
+
+# Environment
+.env
+.env.*
+
+# Frontend
+node_modules/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
